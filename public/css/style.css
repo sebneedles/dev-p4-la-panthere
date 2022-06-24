@@ -7,6 +7,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -53,7 +55,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 16px 50px;
 }
 
 .bg-center,
@@ -215,7 +217,7 @@ a:hover {
 
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
-.l-bloc .navbar a,
+.l-bloc,
 .l-bloc .navbar-brand,
 .l-bloc a .icon-sm,
 .l-bloc a .icon-md,
@@ -233,7 +235,7 @@ a:hover {
 
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
+.l-bloc,
 .l-bloc .navbar-brand:hover,
 .l-bloc a:hover .icon-sm,
 .l-bloc a:hover .icon-md,
@@ -306,6 +308,7 @@ a:hover {
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
+    height: 55px;
 }
 
 .nav-center .navbar-brand img {
@@ -329,9 +332,20 @@ a:hover {
     text-align: inherit;
 }
 
+.nav > li a {
+    color: #575757;
+    font-weight: 500;
+    margin: 0px 5px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: unset;
+    border: 1px solid #F3976C;
+    color: #F3976C;
 }
 
 .navbar-toggle {
@@ -363,7 +377,7 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 0px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -644,8 +658,7 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -955,8 +968,16 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        max-height: 55px;
         width: auto;
+    }
+    .nav > li a {
+        padding: 9px;
+        border: unset;
+    }
+    .nav > li a:hover, .nav > li a:focus {
+        border: unset;
+        color: #F3976C;
     }
     .nav-invert .navbar-header {
         float: none;
