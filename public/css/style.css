@@ -733,12 +733,13 @@ figcaption span {
 h2.title-section-2 {
     font-size: 22px;
     line-height: 1.4em;
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     margin: auto;
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -763,17 +764,23 @@ h4 {
     margin-top: 24px;
 }
 
+.copyright {
+    margin-top: 2em;
+}
+
 .white {
     color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    max-width: 345px;
 }
 
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .avatar {
@@ -847,7 +854,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("../../assets/img/image-de-presentation.bmp");
+    background-image: url("../../assets/img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
