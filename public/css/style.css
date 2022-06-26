@@ -268,7 +268,7 @@ a:hover {
 }
 
 .voffset-lg {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .row-no-gutters {
@@ -283,7 +283,8 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 58px;
+    font-weight: 900;
 }
 
 .navbar {
@@ -456,10 +457,6 @@ nav .caret {
     margin-bottom: 40px;
 }
 
-.btn {
-    margin: 0 5px 5px 0;
-}
-
 .btn.pull-right {
     margin: 0 0 5px 5px;
 }
@@ -494,9 +491,7 @@ button {
     font-size: 60px!important;
 }
 
-.sm-shadow {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
-}
+
 
 .panel-sq,
 .panel-sq .panel-heading,
@@ -592,9 +587,10 @@ a[data-lightbox]:hover img {
     color: #FFF;
     background: rgba(0, 0, 0, .5);
     position: absolute;
-    left: 15px;
-    right: 15px;
+    left: 0;
+    right: 0;
     bottom: 5px;
+    text-align: center;
 }
 
 .close-lightbox {
@@ -687,12 +683,32 @@ label,
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
+}
+
+blockquote {
+    border-left: unset;
+    font-style: italic;
+    color: #575757;
+    margin: 0 0 10px;
+}
+
+figcaption span {
+    font-weight: 600;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+}
+
+.larged-width-whitespace {
+    max-width: 1000px;
+    margin: auto auto auto auto;
+}
+
+.image-resize-mode {
+    width: 100px;
 }
 
 .h1 {
@@ -714,20 +730,22 @@ p {
     margin: auto auto auto auto;
 }
 
-h2 {
+h2.title-section-2 {
     font-size: 22px;
     line-height: 1.4em;
+    width: 650px;
+    margin: auto;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -763,8 +781,9 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: .5em;
 }
 
 .bold-link {
@@ -785,7 +804,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #fff!important;
 }
 
 .btn-atomic-tangerine {
