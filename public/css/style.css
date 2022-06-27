@@ -516,6 +516,41 @@ button {
     box-shadow: none;
 }
 
+.form-group input:focus, textarea:focus{
+    border: #f3976c 1px solid;
+    transition: 300ms;
+    box-shadow: unset;
+}
+
+.form-group input[type=email]:not(:focus):invalid{
+    border: #b20a37 2px solid;
+    background-color: #b20a37;
+    transition: 300ms;
+    box-shadow: unset;
+    color: #fff;
+}
+
+.form-group input[type=button]{
+    background: #F3976C;
+    color: #FFF;
+    border-radius: 30px;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3333333;
+    transition: 300ms;
+    border: unset;
+    margin: auto;
+    display: flex;
+}
+.form-group input[type=button]:hover{
+    background: #c27956;
+    color: #FFFFFF;
+    transition: 300ms;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -817,6 +852,8 @@ h4 {
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
+    border-radius: 30px;
+    margin: auto;
 }
 
 .btn-atomic-tangerine:hover {

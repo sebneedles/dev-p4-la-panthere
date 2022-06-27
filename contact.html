@@ -74,33 +74,26 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form action="/public/js/formHandler.js" method="post" id="form_1" novalidate success-msg="Votre message a bien été envoyé." fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, Désolé pour le dérangement !">
 						<div class="form-group">
-							<label>
-								Nom
-							</label>
+							<label>Nom</label>
 							<input id="name" class="form-control" required />
 						</div>
 						<div class="form-group">
-							<label>
-								Adresse email
-							</label>
+							<label>Adresse email</label>
 							<input id="email" class="form-control" type="email" required />
 						</div>
 						<div class="form-group">
-							<label>
-								Comment nous avez-vous connu ?
-							</label>
-							<input class="form-control" type="email" required id="input_504" />
+							<label>Comment nous avez-vous connu ?</label>
+							<input class="form-control" type="text" required id="input_504" />
 						</div>
 						<div class="form-group">
-							<label>
-								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-							</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-						</div> 
-						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-							Envoyer
-						</button>
+							<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</div>
+						<div class="form-group">
+							<input type="button" value="Envoyer">
+						</div>
 					</form>
 				</div>
 				<div class="col-sm-6">
