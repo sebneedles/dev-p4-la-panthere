@@ -124,10 +124,10 @@ a:hover {
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
+/* .d-bloc a .icon-sm,
 .d-bloc a .icon-md,
 .d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
+.d-bloc a .icon-xl, */
 .d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
@@ -141,10 +141,10 @@ a:hover {
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
+/* .d-bloc a:hover .icon-sm,
 .d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
+.d-bloc a:hover .icon-xl, */
 .d-bloc h1 a:hover,
 .d-bloc h2 a:hover,
 .d-bloc h3 a:hover,
@@ -277,6 +277,7 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    padding-top: 1em;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -783,12 +784,12 @@ figcaption span {
 }
 
 a.social {
-    opacity: .6;
     transition: .3s;
+    color: #000;
 }
 
 a.social:hover {
-    opacity: 1;
+    color: #fff;
     transition: .3s;
 }
 
@@ -828,8 +829,8 @@ h4 {
 
 .copyright {
     margin-top: 2em;
+    color: #000!important;
 }
-
 .white {
     color: #FFFFFF!important;
 }
@@ -838,6 +839,8 @@ h4 {
     margin-bottom: 24px;
     width: 100%;
     max-width: 345px;
+    height: 100%;
+    max-height: 345px;
 }
 
 .portfolio-row {
